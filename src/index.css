@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-paper text-ink font-body antialiased;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-ink;
+  }
+  :focus-visible {
+    outline: 2px solid #E8873A;
+    outline-offset: 3px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Chip-style tag: mimics an IC package with pins on left/right */
+  .chip-tag {
+    @apply relative inline-flex items-center gap-2 font-mono text-[11px] tracking-[0.14em] uppercase text-teal-600 bg-teal-50 border border-teal-100 px-3 py-1.5;
+  }
+  .chip-tag::before, .chip-tag::after {
+    content: "";
+    @apply absolute top-1/2 -translate-y-1/2 w-1.5 h-[2px] bg-teal-400;
+  }
+  .chip-tag::before { left: -6px; }
+  .chip-tag::after { right: -6px; }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3.5 rounded-sm transition-colors duration-150 shadow-chip;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent border border-ink/15 hover:border-teal-500 hover:text-teal-600 text-ink font-semibold px-6 py-3.5 rounded-sm transition-colors duration-150;
+  }
+  .btn-ghost-light {
+    @apply inline-flex items-center justify-center gap-2 bg-white/10 border border-white/25 hover:bg-white/20 text-white font-semibold px-6 py-3.5 rounded-sm transition-colors duration-150;
+  }
+
+  .section-eyebrow {
+    @apply font-mono text-[11px] tracking-[0.2em] uppercase text-amber-600;
+  }
+
+  .trace-divider {
+    @apply relative h-px w-full bg-trace;
+  }
+}
+
+/* Circuit trace background, used sparingly as a signature motif */
+.circuit-bg {
+  background-image:
+    linear-gradient(rgba(11,31,32,0.0), rgba(11,31,32,0.0)),
+    repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(203,219,216,0.5) 39px, rgba(203,219,216,0.5) 40px);
+}
