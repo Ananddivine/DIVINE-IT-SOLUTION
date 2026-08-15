@@ -18,7 +18,7 @@ export default function About() {
       <section className="max-w-6xl mx-auto px-5 md:px-8 py-16 grid md:grid-cols-2 gap-12">
         <div className="space-y-5 text-ink/70 leading-relaxed">
           <p>
-            Divine IT Solutions was built around a simple frustration: too many repair shops
+            Divine IT Solution was built around a simple frustration: too many repair shops
             in Port Moresby, when faced with a dead motherboard, would only offer one answer —
             replace the whole board, or buy a new laptop.
           </p>
@@ -30,7 +30,7 @@ export default function About() {
           </p>
           <p>
             That's the whole premise of chip-level, component-level repair, and it's what
-            Divine IT Solutions has specialized in for over five years — working through more
+            Divine IT Solution has specialized in for over five years — working through more
             than 5,000 laptops and computers across student machines, office fleets, and
             gaming rigs.
           </p>

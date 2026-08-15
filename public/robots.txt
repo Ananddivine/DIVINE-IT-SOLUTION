@@ -1,0 +1,6 @@
+```
+User-agent: *
+Disallow:
+
+Sitemap: https://www.divineitsolutions.com/sitemap.xml
+```

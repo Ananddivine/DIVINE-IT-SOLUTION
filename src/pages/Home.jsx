@@ -6,6 +6,7 @@ import CTASection from "../components/CTASection.jsx";
 import { serviceCategories, stats, process, brands } from "../data/services.js";
 import { testimonials } from "../data/testimonials.js";
 import { PHONE, PHONE_DISPLAY, WHATSAPP_LINK } from "../data/business.js";
+import hotgun from "../assets/HOTGUN.png";
 
 export default function Home() {
   const featuredServices = serviceCategories
@@ -27,7 +28,7 @@ export default function Home() {
             We fix laptops other shops call <span className="text-teal-600">un-fixable.</span>
           </h1>
           <p className="mt-6 text-lg text-ink/60 max-w-xl leading-relaxed">
-            Divine IT Solutions repairs down to the individual chip on the motherboard —
+            Divine IT Solution repairs down to the individual chip on the motherboard —
             not just parts-swapping. 5+ years of experience, 5000+ laptops and computers repaired
             in Port Moresby.
           </p>
@@ -45,7 +46,7 @@ export default function Home() {
         </div>
 
         {/* Trust strip */}
-        <div className="relative bg-ink">
+        <div className="relative bg-teal-900">
           <div className="max-w-6xl mx-auto px-5 md:px-8 py-8 grid grid-cols-2 md:grid-cols-4 gap-6">
             {stats.map((s) => (
               <div key={s.label}>
@@ -105,18 +106,9 @@ export default function Home() {
             </ul>
           </div>
           <div className="relative aspect-[4/3] bg-ink rounded-sm overflow-hidden">
-            <CircuitTrace variant="dark" className="absolute inset-0 w-full h-full opacity-30" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-28 h-28 border-2 border-teal-400 rounded-sm flex items-center justify-center relative">
-                <div className="w-14 h-14 border border-teal-400/60" />
-                {[...Array(4)].map((_, i) => (
-                  <span key={i} className={`absolute w-4 h-[2px] bg-teal-400 ${
-                    i === 0 ? "-left-4 top-1/3" : i === 1 ? "-left-4 bottom-1/3" : i === 2 ? "-right-4 top-1/3" : "-right-4 bottom-1/3"
-                  }`} />
-                ))}
-              </div>
-            </div>
-          </div>
+                     <img src={hotgun} alt="Chip-level motherboard repair" className="absolute inset-0 w-full h-full object-cover opacity-80"/>
+          </div>         
+            
         </div>
       </section>
 
