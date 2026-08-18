@@ -2,7 +2,7 @@ import galleryone from '../assets/galleryone.png';
 import gallerytwo from '../assets/gallerytwo.png';
 import gallerythree from '../assets/gallerythree.png';
 import galleryfour from '../assets/galleryfour.png';
-import ssd from '../assets/ssd.png';  
+import ssd from '../assets/SSD.png';  
 import galleryfive from '../assets/galleryfive.png';
 import gallerysix from '../assets/gallerysix.png';
 import galleryseven from '../assets/galleryseven.png';
