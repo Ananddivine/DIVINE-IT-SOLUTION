@@ -203,7 +203,7 @@ export default function Contact() {
 
           <div className="rounded-sm overflow-hidden border border-ink/10 aspect-video">
             <iframe
-              title="Divine IT Solution location"
+              title="Divine IT Png location"
               className="w-full h-full"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"

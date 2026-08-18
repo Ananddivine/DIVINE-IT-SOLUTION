@@ -28,7 +28,7 @@ export default function Home() {
             We fix laptops other shops call <span className="text-teal-600">un-fixable.</span>
           </h1>
           <p className="mt-6 text-lg text-ink/60 max-w-xl leading-relaxed">
-            Divine IT Solution repairs down to the individual chip on the motherboard —
+            Divine IT Png repairs down to the individual chip on the motherboard —
             not just parts-swapping. 5+ years of experience, 5000+ laptops and computers repaired
             in Port Moresby.
           </p>

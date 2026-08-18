@@ -30,7 +30,7 @@ export default function Header() {
             <span className="w-3 h-3 border border-white/80" />
           </span>
           <span className="font-display font-semibold text-[17px] leading-none">
-            Divine IT<span className="text-amber-500">.</span>
+            Divine IT PNG<span className="text-amber-500">.</span>
           </span>
         </NavLink>
 

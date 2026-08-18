@@ -48,7 +48,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="max-w-6xl mx-auto px-5 md:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-white/40">
-          <p>© {new Date().getFullYear()} Divine IT Solution. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Divine IT Png. All rights reserved.</p>
           <p className="font-mono">PORT MORESBY · NCD · PNG</p>
         </div>
       </div>
