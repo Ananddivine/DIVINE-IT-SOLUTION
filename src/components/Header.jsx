@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { PHONE, PHONE_DISPLAY, WHATSAPP_LINK } from "../data/business.js";
+import logo from "../assets/logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -24,14 +25,8 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-paper/95 backdrop-blur border-b border-ink/10">
       <div className="max-w-6xl mx-auto px-5 md:px-8 h-16 flex items-center justify-between">
         <NavLink to="/" className="flex items-center gap-2.5 shrink-0" onClick={() => setOpen(false)}>
-          <span className="w-8 h-8 relative flex items-center justify-center bg-teal-500 rounded-sm">
-            <span className="absolute -left-1 top-1/2 -translate-y-1/2 w-1 h-2 bg-teal-500" />
-            <span className="absolute -right-1 top-1/2 -translate-y-1/2 w-1 h-2 bg-teal-500" />
-            <span className="w-3 h-3 border border-white/80" />
-          </span>
-          <span className="font-display font-semibold text-[17px] leading-none">
-            Divine IT PNG<span className="text-amber-500">.</span>
-          </span>
+          
+          <img src={logo} alt="Divine IT Solutions Logo" className="h-14 w-auto" />
         </NavLink>
 
         <nav className="hidden lg:flex items-center gap-7">
