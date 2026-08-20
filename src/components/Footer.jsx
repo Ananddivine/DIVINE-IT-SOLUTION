@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { PHONE, PHONE_DISPLAY, EMAIL, WHATSAPP_LINK, ADDRESS_LINE_1, ADDRESS_LINE_2, HOURS } from "../data/business.js";
+import logo from "../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -7,12 +8,12 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-5 md:px-8 py-14 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2.5 mb-4">
-            <span className="w-8 h-8 relative flex items-center justify-center bg-teal-400 rounded-sm">
-              <span className="w-3 h-3 border border-ink" />
-            </span>
-            <span className="font-display font-semibold text-lg text-white">
-              Divine IT<span className="text-amber-400">.</span>
-            </span>
+            <img
+              src={logo}
+              alt="Divine IT Png Logo"
+              className="h-fit w-fit object-contain brightness-[1.2] invert opacity-80"
+            />
+            
           </div>
           <p className="text-sm leading-relaxed max-w-sm text-white/60">
             Chip-level laptop &amp; computer repair in Port Moresby. Five-plus years
